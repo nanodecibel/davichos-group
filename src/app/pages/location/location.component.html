@@ -1,0 +1,109 @@
+<div class="container">
+    <h3 class="text-center my-4">Location de matériel</h3>
+    <div class="accordion" id="equipmentAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#multimediaCollapse" aria-expanded="false" aria-controls="multimediaCollapse">
+            🔊 Multimedia
+          </button>
+        </h2>
+        <div id="multimediaCollapse" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let item of multimediaItems">
+                <div class="equipment-item text-center">
+                  <img [src]="item.image" alt="{{item.name}}" class="img-fluid mb-2">
+                  <p class="item-name">{{item.name}}</p>
+                  <p class="item-price">{{item.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other categories -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aquatiqueCollapse" aria-expanded="false" aria-controls="aquatiqueCollapse">
+            🛶 Aquatique
+          </button>
+        </h2>
+        <div id="aquatiqueCollapse" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let item of aquatiqueItems">
+                <div class="equipment-item text-center">
+                  <img [src]="item.image" alt="{{item.name}}" class="img-fluid mb-2">
+                  <p class="item-name">{{item.name}}</p>
+                  <p class="item-price">{{item.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#campingCollapse" aria-expanded="false" aria-controls="campingCollapse">
+            ⛺ Camping
+          </button>
+        </h2>
+        <div id="campingCollapse" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let item of campingItems">
+                <div class="equipment-item text-center">
+                  <img [src]="item.image" alt="{{item.name}}" class="img-fluid mb-2">
+                  <p class="item-name">{{item.name}}</p>
+                  <p class="item-price">{{item.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sportCollapse" aria-expanded="false" aria-controls="sportCollapse">
+            🎾 Sport
+          </button>
+        </h2>
+        <div id="sportCollapse" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let item of sportItems">
+                <div class="equipment-item text-center">
+                  <img [src]="item.image" alt="{{item.name}}" class="img-fluid mb-2">
+                  <p class="item-name">{{item.name}}</p>
+                  <p class="item-price">{{item.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tenteCollapse" aria-expanded="false" aria-controls="tenteCollapse">
+            🎉 Tente
+          </button>
+        </h2>
+        <div id="tenteCollapse" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let item of tenteItems">
+                <div class="equipment-item text-center">
+                  <img [src]="item.image" alt="{{item.name}}" class="img-fluid mb-2">
+                  <p class="item-name">{{item.name}}</p>
+                  <p class="item-price">{{item.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

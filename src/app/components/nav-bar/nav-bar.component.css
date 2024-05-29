@@ -1,0 +1,11 @@
+
+.img{
+    margin-right: 190px;
+    width: 20%
+    
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row; 
+  }

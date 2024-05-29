@@ -1,0 +1,30 @@
+<div class="more-page">
+    <div class="section founder-story">
+      <h2>Mon histoire</h2>
+      <img src="assets/multimedia/davichoStory.png" alt="Fundador" class="story-image">
+      <p>Je m'appel David Allauca plus connu sous le nom Davicho, je crée le Davicho's Group en 2019 à la suite du nombre croissant de personnes qui me suivent depuis plusieurs années.
+        J'ai commencé par faire un peu de tout, en tant que DJ, photographe et organisateur de fêtes privées telles que des anniversaires et des mariages.
+        Depuis 2012, Les événements privés organisés, et notamment les barbecues au bord du lac, sont devenus un rendez-vous incontournable à Lausanne au cours des 10 dernières années
+        Après avoir rencontré 3 amis qui partagent le même désir de promouvoir divers projets multiculturels et d'intégrer différents types de personnes à travers des événements de 
+        toutes sortes, nous avons créé, en 2021, KEDZ EVENTS. Aujourd'hui, Kedz et Davicho's Group sont complémentaires dans l'organisation d'événements.</p>
+    </div>
+  
+    <div class="section logo-story">
+      <h2>Logo</h2>
+      <img src="assets/multimedia/davichosLogo.png" alt="Logotipo" class="logo-image">
+      <p>Il y a 15 ans, j'ai adopté deux huskies sibériens. Depuis lors, ils ont toujours vécu en meute, ils se défendent mutuellement et sont très proches. 
+        Lors de la conception du logo, il m'a semblé naturel que mes deux loups en soient l'emblème, car le Davicho's Group est avant tout un grand groupe 
+        d'amis que j'aime beaucoup. Certaines personnes sont parties, d'autres sont arrivées, mais sans elles, le Davicho's Group n'existerait pas.</p>
+    </div>
+  
+    <div class="section staff-grid">
+      <h2>Staff</h2>
+      <div class="grid">
+        <div class="grid-item" *ngFor="let member of staffMembers">
+          <img [src]="member.photo" alt="{{ member.name }}">
+          <p>{{ member.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

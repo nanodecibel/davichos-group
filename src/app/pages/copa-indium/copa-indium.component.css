@@ -1,0 +1,165 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 10px;
+  }
+
+  h2{
+    margin-left: 15px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    flex-direction: column; /* Asegura que el contenido del card esté en columna */
+  }
+  
+  .card-images {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    gap: 10px; /* Añade un espacio entre las imágenes */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .card-img-top {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+  
+  .button-container {
+    text-align: center; /* Centra el botón horizontalmente dentro del contenedor */
+    margin-top: 20px; /* Añade un margen superior para espacio adicional */
+    margin-bottom: 20px;
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 15px 30px; /* Ajusta el padding para hacerlo grande */
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    background-color: #c69e45; /* Color de fondo #c69e45 */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+  
+  .custom-button:hover {
+    background-color: #b0883b; /* Color más oscuro al pasar el ratón */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-button {
+      font-size: 18px; /* Ajusta el tamaño del texto para dispositivos móviles */
+      padding: 12px 24px; /* Ajusta el padding para dispositivos móviles */
+    }
+  }
+  
+
+  .podium-section {
+    margin: 20px 15px; /* Margen superior e inferior de 20px, margen izquierdo y derecho de 15px */
+  }
+  
+  .podium-section h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px para el encabezado */
+    text-align: center; /* Centrar el encabezado */
+    color: #c69e45; /* Color de texto para el encabezado */
+  }
+  
+  .card {
+    background-color: white; /* Fondo oscuro para las tarjetas */
+    color: #c69e45; /* Texto claro */
+    border: none; /* Eliminar borde */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .card .card-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .card-images img {
+    max-width: 45%; /* Ajustar el tamaño de las imágenes */
+    margin: 5px; /* Espacio entre las imágenes */
+  }
+  
+  .card-body {
+    text-align: center; /* Centrar el contenido del cuerpo de la tarjeta */
+  }
+
+  div.about {
+    background-color: #555; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interior */
+    margin: 0 auto; /* Centrando el div horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+div.about h3 {
+    text-align: center; /* Centrando el título */
+    color: #c69e45; /* Color del título */
+}
+
+div.about p {
+    margin: 0 15px; /* Márgenes laterales pequeños */
+    color: #c69e45; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+.gallery-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #555; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.gallery-buttons button {
+  background-color: #c69e45; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gallery-buttons button:hover {
+  background-color: black; /* Color del botón al pasar el cursor por encima */
+}
+
+@media (max-width: 600px) {
+  .gallery-buttons {
+      flex-direction: column;
+  }
+
+  .gallery-buttons button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}

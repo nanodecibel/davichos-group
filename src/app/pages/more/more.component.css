@@ -1,0 +1,55 @@
+.more-page {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .story-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .logo-image {
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  .staff-grid {
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    padding: 10px;
+    background-color:#21252a;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
