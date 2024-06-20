@@ -1,0 +1,28 @@
+<div class="gallery-container">
+    <h2>OMC Live</h2>
+    <h4>Vidéos</h4>
+    <div class="gallery-videos">
+      <div *ngFor="let video of videos" class="video-item">
+        <video controls>
+          <source [src]="video.url" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="view-stories">
+      <button (click)="openStories()">Voir les histoires</button>
+    </div>
+    <h4>Photos</h4>
+    <div class="gallery-grid">
+      <div *ngFor="let image of images" class="gallery-item">
+        <img [src]="image.url" [alt]="image.alt" (click)="openImage(image.url)">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal para mostrar imágenes ampliadas -->
+  <div id="imageModal" class="modal" (click)="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
+  

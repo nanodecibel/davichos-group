@@ -57,7 +57,7 @@
                     <img src="assets/multimedia/trofeo4Equipo.png" class="card-img-top" alt="Trofeo 2">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Champion</h5>
+                    <h5 class="card-title">4ème place</h5>
                     <p class="card-text">2 victories 3 match nuls 3 défaite</p>
                 </div>
             </div>
@@ -102,6 +102,48 @@
 </div>
 
 <div class="button-container">
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xcV9i6oHvUKQNWpH2zH-A8iKejzaO5JEgEMdc7oEmexUQkNJWDBLV1hHWTJWUFRVWVJQM1dOWjdWTS4u"
+        class="custom-button">Inscrivez votre équipe ici, 4ème édition</a>
+</div>
+
+
+<div class="gallery-container">
+    <h4>Vidéos</h4>
+    <div class="gallery-videos">
+      <div *ngFor="let video of videos" class="video-item">
+        <video controls>
+          <source [src]="video.url" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="gallery-buttons">
+        <h3>Meilleurs moments des éditions passées</h3>
+        <a href="https://www.instagram.com/stories/highlights/18423855157050981/" target="_blank">
+            <button>2ème édition</button>
+        </a>
+        <a href="https://www.instagram.com/stories/highlights/17933257118821492/" target="_blank">
+            <button>3ème édition</button>
+        </a>
+    </div>
+    
+
+    <h4>Photos</h4>
+    <div class="gallery-grid">
+      <div *ngFor="let image of images" class="gallery-item">
+        <img [src]="image.url" [alt]="image.alt" (click)="openImage(image.url)">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal para mostrar imágenes ampliadas -->
+  <div id="imageModal" class="modal" (click)="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
+
+  <div class="button-container">
     <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xcV9i6oHvUKQNWpH2zH-A8iKejzaO5JEgEMdc7oEmexUQkNJWDBLV1hHWTJWUFRVWVJQM1dOWjdWTS4u"
         class="custom-button">Inscrivez votre équipe ici, 4ème édition</a>
 </div>

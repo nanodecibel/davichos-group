@@ -44,14 +44,6 @@
   margin-top: 20px;
 }
 
-.custom-card {
-  margin: 0 15px;
-  max-width: 540px;
-  background-color: rgb(77, 77, 77);
-  color:#c69e45
-  
-  
-}
 h3{
   margin-top: 20px;
   margin-left: 15px;
@@ -59,6 +51,66 @@ h3{
 
 .custom-card-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.custom-card {
+  flex: 0 0 auto;
+  margin: 0 15px;
+  max-width: 540px;
+  background-color: rgb(77, 77, 77);
+  color: #c69e45;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.carousel-button {
+  display: inline-block;
+  background-color: #c69e45;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: garamond;
+  font-size: small;
+  margin: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    max-width: 300px;
+    margin: 0 10px;
+  }
+
+  .card-body {
+    padding: 5px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .carousel-button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
 }

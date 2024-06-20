@@ -23,16 +23,16 @@ export class LocationComponent {
   ];
 
   campingItems=[
-    { name: 'Glacière 60 L', price: '0 CHF', image: 'assets/multimedia/cooler60.png' },
-    { name: 'Glacière 47 L', price: '0 CHF', image: 'assets/multimedia/cooler47.png' },
-    { name: 'Glacière 100 L', price: '0 CHF', image: 'assets/multimedia/cooler100.png' },
-    { name: 'Tonneau 60 L', price: '0 CHF', image: 'assets/multimedia/tanque.png' },
-    { name: 'Table pliante', price: '0 CHF', image: 'assets/multimedia/mesaPlegable.png' },
+    { name: 'Glacière 60 L', price: '10 CHF', image: 'assets/multimedia/cooler60.png' },
+    { name: 'Glacière 47 L', price: '10 CHF', image: 'assets/multimedia/cooler47.png' },
+    { name: 'Glacière 100 L', price: '15 CHF', image: 'assets/multimedia/cooler100.png' },
+    { name: 'Tonneau 60 L', price: '15 CHF', image: 'assets/multimedia/tanque.png' },
+    { name: 'Table pliante', price: '20 CHF', image: 'assets/multimedia/mesaPlegable.png' },
   ]
 
   sportItems=[
-    { name: 'Filet EXIT', price: '0 CHF', image: 'assets/multimedia/redes.png' },
-    { name: 'Table de ping pong', price: '0 CHF', image: 'assets/multimedia/pingPong.png' },
+    { name: 'Filet EXIT', price: '10 CHF', image: 'assets/multimedia/redes.png' },
+    { name: 'Table de ping pong', price: '30 CHF', image: 'assets/multimedia/pingPong.png' },
   ]
 
   tenteItems=[
