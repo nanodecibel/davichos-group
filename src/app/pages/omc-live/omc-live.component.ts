@@ -22,7 +22,6 @@ export class OmcLiveComponent implements OnInit{
   videos = [
     { url: 'https://res.cloudinary.com/dactwdkqr/video/upload/v1718816005/omcLive/videos/xthd2n3ng1pilatzsyxc.mp4' },
     { url: 'https://res.cloudinary.com/dactwdkqr/video/upload/v1718816006/omcLive/videos/rrwnxam7oyzjdaonvon5.mp4' },
-    // Añade más videos según sea necesario
   ];
 
   openStories() {
